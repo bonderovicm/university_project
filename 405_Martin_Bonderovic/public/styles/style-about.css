@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #edd9a3;
+  color: black;
+  border: 2px solid #df8a4a;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #df8a4a;
+  color: #edd9a3;
+}
+
+.h {
+  height: 10vh;
+  width: 100%;
+  background-color: #6f492c;
+  padding: 7px;
+}
+
+.images-text {
+  display: flex;
+  width: 100%;
+}
+
+.images {
+  width: 50%;
+  height: 50vh;
+  background-color: #332626;
+}
+
+.text {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  background-color: #edd9a3;
+  font-size: 1.6vw;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vw;
+}
+
+.images > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media all and (min-width: 960px) and (max-width: 1024px) {
+  .text {
+    font-size: 2.4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .h {
+    padding: 9px;
+  }
+  .button {
+    padding: 10px 20px;
+  }
+  .images-text {
+    flex-direction: column;
+  }
+  .images {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    font-size: 2.6vw;
+  }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  .text {
+    font-size: 4vw;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .text {
+    font-size: 6.2vw;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+  .text {
+    font-size: 6.5vw;
+  }
+}

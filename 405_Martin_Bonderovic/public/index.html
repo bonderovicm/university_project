@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Sugestije koje sam dobio i ispunio:
+Sugestije od kolega:
+           1.Da promenim boje za licni website(style-me.css line:22),
+          promena boje u hover property za button(line:43)
+           2.Povecan text u span polju na pocetnu stranicu u image slide u mobilnom formatu
+           (line:1244,1330,993)
+Sugestije koje nisam ispunio:
+           1.Da stavim dugme koje vodi ka stranici za raspored casova
+          na drugo mesto
+           Odgovor:Nemam neku odredjenu pozociju gde bih mogao da ga pomerim
+           a u isto vreme i zadrzim minimalisticki izgled koje takoreci ne "ometa"
+           i zeleo sam da i neki drugi item image-slider-a vodi ka nekom linku
+           Pojam image slidera smatram da je dovoljno zanimljiv da ga korisnik kada 
+           put udje na sajt odmah isproba i uz to i vidi button koji vodi ka sajtu za
+           raspored casova-->
+  <!-- Takodje,dodao sam u form-u post u method property zbog sigurnijeg usnosenja podataka -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tab-icon -->
+    <link rel="icon" href="assets/icons/icon.png" />
+    <title>Srednja škola</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="assets/icons/icon.png" /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Početna strana</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="me.html" class="nav-link">Lični website</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Istorijat škole</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section aria-label="Photos">
+      <div class="image-slider" data-image-slider>
+        <button class="slider-button prev" data-slider-button="prev">
+          &#8637;
+        </button>
+        <button class="slider-button next" data-slider-button="next">
+          &#8641;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="assets/images/image_1.jpg" />
+            <div class="link-to-about">
+              <span
+                >Davne 1924. godine, za potrebe tadašnjeg „ Šipada“ koji je
+                brojao nekoliko hiljada pilanskih i šumskih radnika, javila se
+                potreba za zanatskim obrazovanjem domaćeg stanovništva. Stoga je
+                1924.godine počela sa radom šegrtska škola u kojoj su izučavani
+                zanati drvoprerađivačke struke – gateristi i stolari, kao i
+                zanati metalske struke,za potrebe pilane i željeznice. Nakon II.
+                svetskog rata, zbog ogromnih potreba u obnovi i izgradnji
+                zemlje, Drvar postaje izuzetno jak radnički centar, sa nekoliko
+                hiljada radnika u drvnoj industriji, šumarstvu, že...</span
+              >
+              <a href="about.html"><button>Saznaj više</button></a>
+            </div>
+          </li>
+          <li class="slide">
+            <img src="assets/images/image-hallway.jpg" />
+            <div class="wrapper">
+              <a href="table.html"
+                ><button class="dugme">Raspored časova</button></a
+              >
+            </div>
+          </li>
+          <li class="slide">
+            <img src="assets/images/image-inside.jpg" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="about-us">
+      <div class="heading1">
+        <span>ZAŠTO BAŠ MI?</span>
+      </div>
+      <div class="information-1">
+        <span class="text1">
+          <i class="fa fa-graduation-cap fa-2x" style="margin-bottom: 10px"></i>
+          <br />
+          Zato što pružamo mogućnost pohađanja različitih obrazovnih programa
+          kroz savremenu interaktivnu i projektnu nastavu.
+        </span>
+        <span class="text1">
+          <i class="fa fa-users fa-2x" style="margin-bottom: 10px"></i>
+          <br />
+          Zato što verujemo da tvoje školovanje mora da bude kvalitetno, a tvoj
+          prvi utisak o nama osmeh i motivacija.
+        </span>
+        <span class="text1">
+          <i class="fa fa-laptop fa-2x" style="margin-bottom: 10px"></i>
+          <br />
+          Zato što smo „škola vežbaonica” i jedna od opremljenijih gimnazija u
+          zemlji, koja posebnu pažnju poklanja kvalitetnom radnom okruženju.
+        </span>
+      </div>
+      <br />
+      <div class="heading2">
+        <span>ZAŠTO ŽELIMO BAŠ TEBE?</span>
+      </div>
+      <div class="information-1">
+        <span class="text2">
+          <i class="fa fa-key fa-2x" style="margin-bottom: 10px"></i>
+          <br />
+          Zato što veruješ da tvoja budućnost leži u kvalitetnom obrazovanju!
+        </span>
+        <span class="text2">
+          <i class="fa fa-bullhorn fa-2x" style="margin-bottom: 10px"></i>
+          <br />
+          Zato što se ne bojiš vrhunskih izazova!
+        </span>
+        <span class="text2">
+          <i class="fa fa-heart fa-2x" style="margin-bottom: 10px"></i>
+          <br />
+          Zato što daješ sve od sebe da svet učiniš boljim mestom za život!
+        </span>
+      </div>
+    </div>
+    <div class="space">KONTAKTIRAJTE NAS!</div>
+    <div class="contact-container">
+      <div class="class-form">
+        <div class="form-container">
+          <div class="error"></div>
+          <form id="theForm" method="post">
+            <div class="container-row">
+              <label for="username" id="contact">Korisničko ime:</label>
+              <input
+                class="box"
+                type="text"
+                placeholder="Username"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="container-row">
+              <label for="e-mail">E-mail:</label>
+              <input
+                class="box"
+                type="email"
+                placeholder="primer@gmail.com"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="container-row">
+              <label for="password">Lozinka:</label>
+              <input
+                class="box"
+                type="password"
+                placeholder="Password"
+                name="password"
+                id="password"
+                required
+              />
+            </div>
+            <div class="container-row">
+              <label for="message">Poruka:</label>
+              <input
+                type="text"
+                type="message"
+                placeholder="Poruka"
+                id="message"
+                style="height: 20vh; border: 2px solid #dac9b6"
+                required
+              />
+            </div>
+            <br />
+            <div class="container-row">
+              <input type="submit" value="Submit" id="submitbutton" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="socials-container">
+        <span
+          ><i class="fa fa-map-marker fa-1x"></i> Adresa:18106 Niš • Višegradska
+          33 • Poš. fah : 224</span
+        >
+        <span
+          ><i class="fa fa-phone fa-1x"></i> Telefon:Centrala (018) 533-015 ,
+          226-310 <br />Dekanat 066/244472, (018) 224-492 , 224-472</span
+        >
+        <span><i class="fa fa-building fa-1x"></i> Fakultet:(018) 533-014</span>
+        <span><i class="fa fa-envelope fa-1x"></i> E-mail:840-1789666-80</span>
+      </div>
+    </div>
+
+    <div style="clear: both"></div>
+
+    <section class="footer">
+      <div class="social">
+        <a href="https://www.facebook.com/"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <br />
+        <span style="opacity: 0.8">&copy; Martin Bonderović</span>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

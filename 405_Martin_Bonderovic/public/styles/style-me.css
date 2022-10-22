@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  height: 100vh;
+  width: 50%;
+  background-color: #332626;
+}
+
+.right {
+  flex: 1;
+  height: 100vh;
+  width: 50%;
+  background-color: rgb(24, 23, 23);
+}
+
+a > button {
+  font-size: 3em;
+  background: none;
+  border: none;
+  padding-left: 20px;
+  opacity: 0.7;
+}
+
+a > button:hover {
+  font-size: 3.5rem;
+  transition: 0.8s;
+  color: #edd9a3;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 70vh;
+  width: 60vw;
+  background-color: rgba(11, 7, 7, 0.619);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column !important;
+}
+
+.left-card {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-card > img {
+  height: 20vh;
+}
+
+.right-card {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-card > span {
+  padding: 20px 20px;
+  font-size: 1.1vw;
+}
+
+@media all and (min-width: 1441px) and (max-width: 2560px) {
+  .left-card > img {
+    height: 13vw;
+  }
+
+  .right-card {
+    width: 70%;
+  }
+
+  .right-card > span {
+    font-size: 1.5vw;
+  }
+
+  a > button {
+    font-size: 6rem;
+    background: none;
+    border: none;
+    padding-left: 60px;
+    opacity: 0.7;
+  }
+
+  a > button:hover {
+    font-size: 6.5rem;
+    transition: 0.8s;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .left-card > img {
+    height: 22vw;
+  }
+
+  .right-card {
+    width: 70%;
+  }
+
+  .right-card > span {
+    font-size: 2.1vw;
+  }
+  a > button {
+    font-size: 4rem;
+  }
+
+  a > button:hover {
+    font-size: 3.8rem;
+  }
+}
+
+@media all and (min-width: 960px) and (max-width: 1024px) {
+  .left-card > img {
+    height: 22vw;
+  }
+
+  .right-card {
+    width: 70%;
+  }
+
+  .right-card > span {
+    font-size: 2.5vw;
+  }
+  a > button {
+    font-size: 3.5rem;
+  }
+
+  a > button:hover {
+    font-size: 3.8rem;
+  }
+}
+
+@media all and (min-width: 801px) and (max-width: 959px) {
+  .left-card > img {
+    height: 10vw;
+  }
+
+  .right-card > span {
+    font-size: 1.2vw;
+    left: 23em;
+  }
+  a > button {
+    font-size: 3.5rem;
+  }
+
+  a > button:hover {
+    font-size: 3.8rem;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 800px) {
+  .left-card > img {
+    height: 10vw;
+  }
+
+  .right-card > span {
+    font-size: 1.2vw;
+    left: 23em;
+  }
+  a > button {
+    font-size: 3.5rem;
+  }
+
+  a > button:hover {
+    font-size: 3.8rem;
+  }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  .left-card > img {
+    height: 20vw;
+  }
+
+  .right-card {
+    width: 70%;
+  }
+
+  .right-card > span {
+    font-size: 2.3vw;
+  }
+  a > button {
+    font-size: 3.5rem;
+  }
+
+  a > button:hover {
+    font-size: 3.8rem;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+  .left-card > img {
+    height: 20vw;
+  }
+
+  .right-card > span {
+    font-size: 1.2vw;
+    left: 23em;
+  }
+  a > button {
+    font-size: 3.5rem;
+  }
+
+  a > button:hover {
+    font-size: 3.8rem;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .left-card > img {
+    height: 30vw;
+  }
+
+  .right-card > span {
+    font-size: 3vw;
+  }
+  a > button {
+    font-size: 3.5rem;
+  }
+
+  a > button:hover {
+    font-size: 3.8rem;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+  .card {
+    flex-direction: column;
+  }
+  .left-card > img {
+    height: 30vw;
+  }
+
+  .right-card > span {
+    font-size: 3vw;
+  }
+  a > button {
+    font-size: 2rem;
+    padding-left: 12px;
+  }
+
+  a > button:hover {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-height: 500px) {
+  .left-card > img {
+    height: 15vw;
+  }
+
+  .right-card > span {
+    font-size: 1.6vw;
+  }
+  a > button {
+    font-size: 3rem;
+  }
+
+  a > button:hover {
+    font-size: 3.5rem;
+  }
+}

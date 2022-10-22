@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #332626;
+}
+
+.h {
+  height: 10vh;
+  width: 100%;
+  background-color: #6f492c;
+  padding: 7px;
+}
+
+.button {
+  background-color: #edd9a3;
+  color: black;
+  border: 2px solid #df8a4a;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #df8a4a;
+  color: #edd9a3;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80vw;
+  height: 40vh;
+  text-align: center;
+  border: 1px solid #df8a4a;
+  box-shadow: 2px 2px 12px #df8a4a;
+  font-size: 1.2vw;
+  color: #edd9a3;
+}
+
+tr {
+  transition: all 0.2s ease-in;
+}
+
+tr:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px #df8a4a;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+#header {
+  background-color: #6f492c;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+  table {
+    width: 90%;
+  }
+
+  .button {
+    padding: 20px 35px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  table {
+    font-size: 2.5vw;
+  }
+}
